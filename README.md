@@ -15,7 +15,11 @@ It contains, navbar, images, and form.
 ## One Page I am Power Site
 This is also one of my first one-page practice websites. It contains menu navbar, several images, form that can be filled out and submitted. This is my passion project and I plan to develop it into a full working website and a non profit organization.
 
+## What I have learened in HTML and CSS Course
+I learned and used in my projects the following: the syntax and structure of HTML and CSS, encoding, decoding character sets, API, styling HTML documents with CSS, using github and visual studio code, bootstrap, and debugging.
 
+
+https://github.com/jamzt/HTML-and-CSS-Projects
 ## Contributing
 Feel free to use the code or improve it anyway.  
 
