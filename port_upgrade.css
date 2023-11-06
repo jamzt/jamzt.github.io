@@ -45,7 +45,7 @@ p {
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, Geneva, sans-serif bold;
     text-align: justify; /* Justify text within paragraph elements */
     letter-spacing: 1px; /* This expands the text slightly */
-    font-size: 22px;
+    font-size: 24px;
     padding-left: 25px; /* Adds padding to the left of the paragraph element */
     padding-right: 25px; /* Adds padding to the right of the paragraph element */
     scroll-behavior: smooth;
@@ -176,7 +176,7 @@ footer {
     position: fixed; /* This fixes the video to the page */
     right: 0; /* This ensures there is no space between the edge of the video and the edge of the page */
     bottom: 0; /* This ensures no space between the bottom of the video and the bottom of the page */
-    min-width: 50%; /* This ensures the video is displayed across the full width of the page */
+    min-width: 100%; /* This ensures the video is displayed across the full width of the page */
     z-index: -1; /* This places the video behind the other elements on the page */
 }
 
@@ -206,10 +206,6 @@ footer {
 }
 /***** END OF VIDEO STYLING *****/
 
-/***** TABLE STYLING -  this section covers the styling of the columns and rows within the table *****/
-* { /* The asterisk is a universal selector that applies this effect to all elements on the page */
-    box-sizing: border-box; /* This creates a box with a border within which we will place most of our text */
-}
 
 /***** Slideshow Styling *****/
 #Slideshow_Background {
@@ -327,20 +323,18 @@ footer {
     box-sizing: border-box; /* This creates a box with a border within which we will place most of our text */
 } 
 
-.Column_1 {
+.Column_2 {
     float: left;
     width: 50%; /* This ensures the column takes up half of the page width */
-    padding: 15px;
-    padding-top: 4%; /* This ensures there is space between the top of the column and our headings */
+    padding: 1.5%;
     height:450px; /* This sets the height of the column to 400px -  this may need to be adjusted depending on the text you enter */
     background-color: #d9cfe3; /* Sets the background color of the columns with class Column_1 */
 }
 
-.Column_2 {
+.Column_1 {
     float: left;
     width: 50%;
-    padding: 15px;
-    padding-top: 2.1%;
+    padding: 1.5%;
     height: 450px;
     background-color: #9180b1;
 }
