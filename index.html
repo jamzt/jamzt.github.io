@@ -1,120 +1,182 @@
-<!DOCTYPE html>
+!DOCTYPE html>
 <html lang="en">
+    <!-- Head -->
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width" />
+        <meta name="viewport" content="width=device-width initial-scale=1"/>
         <title>Jamie Taalai</title>
-        <link rel="stylesheet" type="text/css" href="./portfolio.css">
+        <link rel="shortcut icon" type="img/jpg" href="../jamzt.github.io/coding3.jpg">
+        <link rel="stylesheet" type="text/css" href="./port_upgrade.css">
     </head>
-</html>
 
 
-<body class="Background">
 
-    <!------NAVBAR------->
-    <div class="Navbar">
-        <a class="active" href="Home">Home</a>
-        <a href="#About">About</a>
-        <a href="#GitHub">GitHub</a>
-        <a href="#Contact">Contact</a>
-    </div>
+    <!-- Body -->
+    <body class="Background">
 
-    <!---breaks to add space between navbar and first heading--->
-    <br>
-    <br>
-
-    <!--Background video-->
-    <div id="Home">
-        <video autoplay muted loop id="Typing">
-            <source src="./matrix.mp4" type="video/mp4">
-            <!--Display this i video fails-->
-            Your browser does not support HTML5 video.
-        </video>
-    </div>
-
-    <!-- Video text-->
-    <div class="Video_Text">
-        <h1 class="white-text">Jamie's Portfolio</h1>
-        <strong>
-            <p class="center">
-                <q>The computer programmer is a creator of universes for which he alone is the lawgiver.
-                    <br>No playwright, no stage director, no emperor, however powerful, has ever exercised such absolute authority to arrange a stage or
-                    <br>field of battle and to command such unswervingly dutiful actors or troops.
-                </q>
-                <br> -Joseph Weizenbaum
-                <br>
-                <br>
-                <br>My name is Jamie. Welcome to my porfolio. On it, I will tell youb about my background and expereince.
-                <br>
-                <br>Thanks for stopping by and enjoy! 
-            </p>
-        </strong>
-    </div> 
-
-    <!--About section-->
-    <div class="Row" id="About">
-        <!--Left column-->
-        <div class="Column_2">
-            <img src="./coding1.jpg" alt="Lines of code.">
+        <!------NAVBAR------->
+        <div class="Navbar">
+            <a class="active" href="#Home">Home</a>
+            <!--new section added-->
+            <a href="#Slideshow">Slideshow</a>
+            <a href="#About">About</a>
+            <a href="#GitHub">GitHub</a>
+            <!--onclick and ondblclick function is added to open and close the contact form-->
+            <a onclick="openForm()" ondblclick="closeForm()" class="contact">Contact</a>
         </div>
-        <!--Right column-->
-        <div class="Column_1">
-            <h1>About</h1>
-            <p>
-                I am a software developer who loves to code and solve problems. I am a former analyst who switched career from finance to tech.
-                <br>
-                <br>I am a graduate of <a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy</a>’s Python Developer Boot Camp, and trained and experienced in the following web and programming languages: Python, HTML, CSS, JavaScript, SQL, C# and more. 
+
+        <!---breaks to add space between navbar and first heading--->
+        <br>
+        <br>
+
+        <!--Background video-->
+        <div id="Home">
+            <video autoplay muted loop id="Typing">
+                <source src="./matrix.mp4" type="video/mp4">
+                <!--Display this i video fails-->
+                Your browser does not support HTML5 video.
+            </video>
+        </div>
+
+        <!-- Video text-->
+        <div class="Video_Text">
+            <h1 class="white-text">Jamie's Portfolio</h1>
+            <strong>
+                <p class="center">
+                    <q>The computer programmer is a creator of universes for which he alone is the lawgiver.
+                        <br>No playwright, no stage director, no emperor, however powerful, has ever exercised such absolute authority to arrange a stage or
+                        <br>field of battle and to command such unswervingly dutiful actors or troops.
+                    </q>
+                    <br> -Joseph Weizenbaum
                     <br>
-                    <br>I am a full-stack developer and would love to work with you on your project. <a href="#Contact">Contact</a> me below!
-            </p>
+                    <br>
+                    <br>My name is Jamie. Welcome to my porfolio. On it, I will tell youb about my background and expereince.
+                    <br>
+                    <br>Thanks for stopping by and enjoy! 
+                </p>
+            </strong>
         </div>
-    </div>
+        
+        <!-- Slide show section added -->
+        <div id="Slideshow">
+            <div id="Slideshow_Background">
+                <div id="Slideshow_Container">
+                    <!-- slide 1 of 6-->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="../jamzt.github.io/port_upgrade/jamie.jpeg" alt="Picture of myself">
+                        <div class="text">I'm available to assist you on your projects!</div>
+                    </div>
+                        <!-- Slide 2 of 6 -->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="../jamzt.github.io/port_upgrade/HTML_CSS_and_JavaScript.jpeg" alt="HTML, CSS, and JS logos"> 
+                        <div class="text">I am a full-stack software developer,<br> trained in:<br>HTML, CSS, JavaScript,</div>
+                    </div>
+                    <!-- Slide 3 of 6 -->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="../jamzt.github.io/port_upgrade/Python.png" alt="Python logo">
+                        <div class="text">The popular programming language Python,</div>
+                    </div>
+                    <!-- Slide 4 of 6 -->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="../jamzt.github.io/port_upgrade/C_Sharp_and_Dot_NET.png" alt="C# logo">
+                        <div class="text">C#, .NET Framework, ASP.NET, MVC, </div>
+                    </div>
+                    <!-- Slide 5 of 6 -->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="../jamzt.github.io/port_upgrade/SQL_and_Database.jpg" alt="SQL logo"> 
+                        <div class="text">Back end development, databases and SQL.</div>
+                    </div>
+                    <!-- Slide 6 of 6 -->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="../jamzt.github.io/port_upgrade/coding3.jpg" alt="pic">
+                        <div class="text"><a class="white-text contact" onclick="openForm()">Contact me now!</a></div> 
+                    </div>
+                    <!-- Previous and next buttons -->
+                    <a class="Previous" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="Next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                <br> <!-- Adds a space between the slideshow images and the dots -->
 
-     <!--GitHub section-->
-     <div class="Row" id="GitHub">
+                <!-- Slideshow dots (these are another way for users to navigate through the slideshow) -->
+                <div style="text-align: center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span> 
+                    <span class="dot" onclick="currentSlide(4)"></span> 
+                    <span class="dot" onclick="currentSlide(5)"></span> 
+                    <span class="dot" onclick="currentSlide(6)"></span> 
+                </div>
+            </div>
+        </div>
+
+
+
+        <!--About section-->
+        <div class="Row" id="About">
         <!--Left column-->
-        <div class="Column_1">
-            <h1>GitHub</h1>
-            <p>
-                You can view my coding projects on my GitHub profile here:
-                <br>
-                <p class="center"><a href="https://github.com/jamzt" target="_blank">Jamie's Github</a></p>
-            </p>
-        </div>
+            <div class="Column_1">
+                <img src="../jamzt.github.io/port_upgrade/coding2.jpg" alt="Lines of code">
+            </div>
         <!--Right column-->
-        <div class="Column_2">
-            <a href="https://github.com/jamzt" target="_blank"><img src="./GitHub.png" alt="GitHub Logo"></a>
+            <div class="Column_2">
+                <h1>About</h1>
+                <p>
+                I am a software developer who loves to code and solve problems. I am a former analyst who switched career from finance to tech.
+                <br>I am a graduate of <a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy</a>’s Python Developer Boot Camp, and trained and experienced in the following web and programming languages: Python, HTML, CSS, JavaScript, SQL, C# and more. 
+                    <br>I would love to work with you on your project. <a href="#Contact">Contact</a> me below!
+            </p>
+            </div>
         </div>
+
+        <!--GitHub section-->
+        <div class="Row" id="GitHub">
+            <!--Left column-->
+            <div class="Column_2">
+                <h1>GitHub</h1>
+                <p>
+                    You can view my coding projects on my GitHub profile here:
+                    <br>
+                    <p class="center"><a href="https://github.com/jamzt" target="_blank">Jamie's Github</a></p>
+                </p>
+            </div>
+            <!--Right column-->
+            <div class="Column_1">
+                <a href="https://github.com/jamzt" target="_blank"><img src="./GitHub.png" alt="GitHub Logo"></a>
+            </div>
+        </div>
+
+        <!-- Contact form -->
+        <div id="Contact">
+            <button onclick="openForm()" class="Pop_Up_Button">CONTACT</button>
+            <!--Contact image, left column-->
+            <div class="form-popup" id="myForm">
+                <form action="https://formspree.io/jamietaalai@gmail.com" method="POST" class="form-container">
+                    <h1>Contact</h1>
+                    <label for="name"><b>Name</b></label>
+                        <input type="text" placeholder="Type your name here" name="name" required>
+                    <label for="phone"><b>Phone</b></label>
+                        <input type="text" placeholder="Type your phone number here" name="phone">
+                    <label for="email"><b>Email</b></label>		
+                        <input type="text" placeholder="Type your email address here" name="email" required>
+                    <label for="message"><b>Message</b></label>
+                        <input type="text" placeholder="Type your message here" name="message">
+            
+                    <button type="submit" class="btn">SUBMIT</button>
+                    <button type="button" class="btn cancel" onclick="closeForm()">CLOSE</button>
+                </form>
+            </div>
     </div>
 
-    <!-- Contact section -->
-    <div class="Row" id="Contact">
-          <!--Contact image, left column-->
-          <div class="Column_2 Column_tall">
-            <img src="./coding3.jpg" alt="Contact_Image">
-          </div>
 
-        <!--Contact form, right column-->
-        <div class="Column_1 Column_tall">
-            <h1>Contact</h1>
-                    <!--This specifies where and how to send the form data; we are leaving it blank-->
-                    <form action="c" method="POST"> <!-- Here we are utilizing a 3rd party service to submit the contact form data, insert your formspree endpoint in the action attribute -->
-                        <label>Name:</label>
-                            <input type="text" placeholder="Please enter your name here">
-                        <label>Email:</label>
-                            <input type="text" id="Email" name="Email" placeholder="Please enter your email here">
-                        <label>Message:</label>
-                            <input type="text" id="Message" name="Message" placeholder="Please write your message here">
-                            <input type="submit" value="SUBMIT">
-                    </form>
-        </div>
+        <hr> <!--horizontal rule tag-->
 
-    <!--Footer section-->
+        <!--Footer section-->
         <footer>
-            <p>
                 <p class="center">&copy <a href="https://linkedin.com/in/jamietaalai" target="_blank">Jamie Taalai</a></p>
-                <br>
-            </p>
+                    <br>
         </footer>
+        <script src="port_upgrade.js" defer></script>
+
     </body>
 </html>
+
