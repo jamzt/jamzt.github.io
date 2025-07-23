@@ -1,157 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width initial-scale=1"/>
-        <title>Jamie Taalai</title>
-        <link rel="shortcut icon" type="img/jpg" href="../jamzt.github.io/coding3.jpg">
-        <link rel="stylesheet" type="text/css" href="port_upgrade.css">
-    </head>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jamie Taalai - Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Hi, I'm Jamie Taalai 👋</h1>
+    <p>Full Stack Developer | Finance & Data Enthusiast</p>
+  </header>
 
-    <body class="Background">
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      I'm a full stack developer and analyst with a background in finance, accounting, and investing. My curiosity about Python’s role in financial analysis grew into a deep interest in building real-world tools that combine data, design, and systems thinking. After completing a Full Stack Engineering certification and interning as a developer, I shifted to a more technical career path focused on applied data and financial technology.
+    </p>
+  </section>
 
-        <!-- NAVBAR -->
-        <div class="Navbar">
-            <a class="active" href="#Home">Home</a>
-            <a href="#Slideshow">Slideshow</a>
-            <a href="#About">About</a>
-            <a href="#GitHub">GitHub</a>
-            <a onclick="openForm()" ondblclick="closeForm()" class="contact">Contact</a>
-        </div>
+  <section id="project">
+    <h2>🔧 Recent Project</h2>
+    <h3>🧠 Lytheon — AI-Powered Investment Valuation Platform</h3>
+    <ul>
+      <li>Parses real-time financial and macroeconomic data (SEC/EDGAR, FRED, Yahoo Finance)</li>
+      <li>Integrates FinBERT for NLP-based sentiment and behavioral finance analysis</li>
+      <li>Applies ARIMA models for time-series forecasting</li>
+      <li>Dynamically selects valuation models (DCF, GGM, or custom) based on multi-dimensional drivers</li>
+      <li>Streamlit prototype UI transitioning to a React-based frontend</li>
+    </ul>
+  </section>
 
-        <br><br>
+  <section id="skills">
+    <h2>💼 Skills and Tools</h2>
+    <ul>
+      <li><strong>Languages:</strong> Python, JavaScript, HTML, CSS, Java (learning)</li>
+      <li><strong>Frameworks:</strong> React, Streamlit</li>
+      <li><strong>Data & APIs:</strong> SQL, REST APIs, FRED, Yahoo Finance, EDGAR</li>
+      <li><strong>Libraries:</strong> Pandas, NumPy, Scikit-learn, Statsmodels, BeautifulSoup</li>
+      <li><strong>NLP:</strong> FinBERT, Regex parsing</li>
+      <li><strong>Version Control:</strong> Git/GitHub</li>
+    </ul>
+  </section>
 
-        <!-- Background video -->
-        <div id="Home">
-            <video autoplay muted loop id="Typing">
-                <source src="./matrix.mp4" type="video/mp4">
-                Your browser does not support HTML5 video.
-            </video>
-        </div>
+  <section id="repos">
+    <h2>📌 Pinned Repositories</h2>
+    <ul>
+      <li><a href="https://github.com/jamzt">Lytheon (Private Repo)</a> – AI valuation platform with NLP and forecasting</li>
+      <li><a href="https://github.com/jamzt/jamzt.github.io">jamzt.github.io</a> – Personal portfolio site</li>
+      <li><a href="https://github.com/jamzt/PyProjects">PyProjects</a> – Python scripts & tools</li>
+      <li><a href="https://github.com/jamzt/JavaScript_Projects">JavaScript_Projects</a> – Frontend projects</li>
+      <li><a href="https://github.com/jamzt/HTML-and-CSS-Projects">HTML-and-CSS-Projects</a></li>
+      <li><a href="https://github.com/jamzt/developers">developers (Fork)</a></li>
+    </ul>
+  </section>
 
-        <!-- Video text -->
-        <div class="Video_Text">
-            <h1 class="white-text">Jamie's Portfolio</h1>
-            <strong>
-                <p class="center">
-                    <q>The computer programmer is a creator of universes...</q>
-                    <br> -Joseph Weizenbaum
-                    <br><br><br>
-                    My name is Jamie. Welcome to my portfolio.
-                    <br>
-                    I’m a former investment analyst and accountant turned full-stack engineer. My work focuses on building intelligent, data-driven applications for finance, forecasting, and decision automation.
-                    <br>
-                    My recent project <strong>Lytheon</strong> is an AI-powered valuation platform using SEC, FRED, and Yahoo Finance APIs. It dynamically forecasts with ARIMA, selects valuation models, and applies NLP for behavioral diagnostics.
-                    <br>
-                    Excited by how AI and software can transform investment decisions.
-                </p>
-            </strong>
-        </div>
-
-        <!-- Slideshow section -->
-        <div id="Slideshow">
-            <div id="Slideshow_Background">
-                <div id="Slideshow_Container">
-                    <!-- Slides updated -->
-                    <div class="mySlides fade">
-                        <img class="Slideshow_Images" src="../jamzt.github.io/port_upgrade/jamie.jpeg" alt="Picture of myself">
-                        <div class="text">Available for data-driven, AI-powered projects</div>
-                    </div>
-                    <div class="mySlides fade">
-                        <img class="Slideshow_Images" src="../jamzt.github.io/port_upgrade/HTML_CSS_and_JavaScript.jpeg" alt="HTML, CSS, and JS logos"> 
-                        <div class="text">Full-stack developer: HTML, CSS, JavaScript</div>
-                    </div>
-                    <div class="mySlides fade">
-                        <img class="Slideshow_Images" src="../jamzt.github.io/port_upgrade/Python.png" alt="Python logo">
-                        <div class="text">Python for analytics, AI, and automation</div>
-                    </div>
-                    <div class="mySlides fade">
-                        <img class="Slideshow_Images" src="../jamzt.github.io/port_upgrade/C_Sharp_and_Dot_NET.png" alt="C# logo">
-                        <div class="text">C#, .NET Framework, ASP.NET, MVC</div>
-                    </div>
-                    <div class="mySlides fade">
-                        <img class="Slideshow_Images" src="../jamzt.github.io/port_upgrade/SQL_and_Database.jpg" alt="SQL logo"> 
-                        <div class="text">Data wrangling, SQL, and backend workflows</div>
-                    </div>
-                    <div class="mySlides fade">
-                        <img class="Slideshow_Images" src="../jamzt.github.io/port_upgrade/coding3.jpg" alt="pic">
-                        <div class="text"><a class="white-text contact" onclick="openForm()">Let’s connect!</a></div> 
-                    </div>
-                    <a class="Previous" onclick="plusSlides(-1)">&#10094;</a>
-                    <a class="Next" onclick="plusSlides(1)">&#10095;</a>
-                </div>
-                <br>
-                <div style="text-align: center">
-                    <span class="dot" onclick="currentSlide(1)"></span>
-                    <span class="dot" onclick="currentSlide(2)"></span>
-                    <span class="dot" onclick="currentSlide(3)"></span> 
-                    <span class="dot" onclick="currentSlide(4)"></span> 
-                    <span class="dot" onclick="currentSlide(5)"></span> 
-                    <span class="dot" onclick="currentSlide(6)"></span> 
-                </div>
-            </div>
-        </div>
-
-        <!-- About section -->
-        <div class="Row" id="About">
-            <div class="Column_1">
-                <img src="../jamzt.github.io/port_upgrade/coding2.jpg" alt="Lines of code">
-            </div>
-            <div class="Column_2">
-                <h1>About</h1>
-                <p>
-                I'm Jamie — a finance-trained developer passionate about data, NLP, and intelligent systems.
-                <br>I specialize in building full-stack applications and AI-powered valuation tools with Python, SQL, Streamlit, and REST APIs.
-                <br>My work includes time-series forecasting (ARIMA), company lifecycle classification, and behavioral signal extraction via FinBERT.
-                <br>Graduate of <a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy</a>’s Python bootcamp.
-                </p>
-            </div>
-        </div>
-
-        <!-- GitHub section -->
-        <div class="Row" id="GitHub">
-            <div class="Column_2">
-                <h1>GitHub</h1>
-                <p>
-                    Explore my projects including <strong>Lytheon</strong> — an AI-enhanced equity valuation engine:
-                    <br>
-                    <p class="center"><a href="https://github.com/jamzt" target="_blank">Visit My GitHub</a></p>
-                </p>
-            </div>
-            <div class="Column_1">
-                <a href="https://github.com/jamzt" target="_blank"><img src="./GitHub.png" alt="GitHub Logo"></a>
-            </div>
-        </div>
-
-        <!-- Contact form -->
-        <div id="Contact">
-            <button onclick="openForm()" class="Pop_Up_Button">CONTACT</button>
-            <div class="form-popup" id="myForm">
-                <form action="https://formspree.io/jamietaalai@gmail.com" method="POST" class="form-container">
-                    <h1>Contact</h1>
-                    <label for="name"><b>Name</b></label>
-                        <input type="text" placeholder="Your name" name="name" required>
-                    <label for="phone"><b>Phone</b></label>
-                        <input type="text" placeholder="Your phone number" name="phone">
-                    <label for="email"><b>Email</b></label>	
-                        <input type="text" placeholder="Your email" name="email" required>
-                    <label for="message"><b>Message</b></label>
-                        <input type="text" placeholder="Type your message" name="message">
-
-                    <button type="submit" class="btn">SUBMIT</button>
-                    <button type="button" class="btn cancel" onclick="closeForm()">CLOSE</button>
-                </form>
-            </div>
-        </div>
-
-        <hr>
-
-        <!-- Footer -->
-        <footer>
-            <p class="center">&copy <a href="https://linkedin.com/in/jamietaalai" target="_blank">Jamie Taalai</a></p>
-        </footer>
-
-        <script src="port_upgrade.js" defer></script>
-
-    </body>
+  <footer>
+    <p>&copy; 2025 Jamie Taalai</p>
+  </footer>
+</body>
 </html>
